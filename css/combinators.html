@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /* div p {
+            background-color: red;
+        } */
+
+        /* div > p {
+            background-color: red;
+        } */
+
+        /* div + p {
+            background-color: red;
+        } */
+
+        div ~ p {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Combinators -->
+
+    <!-- 1- Descendant Selector ( ) divin altındaki tüm p etiketlerini seçmemizi sağlar-->
+    <!-- 2- Child Selector (>) div >p yaparsak o zaman sadece div etiketinin altında olan çocukları alır ama divin içinde olan sectionu almaz yani torunları saymaz. -->
+
+    <p>1.paragraf</p>
+    <div>
+        <p>2.paragraf</p>
+        <p>3.paragraf</p>
+        <section>
+            <p>4.paragraf</p>
+        </section>
+    </div>
+    <p>5.paragraf</p>
+    <p>6.paragraf</p>
+
+    <!-- 3- Adjacent Sibling Selector (+) div etiketinden sonra gelen ilk p etiketini alır. seçilen pden sonrakini almaz. -->
+    <!-- 4- General Sibling Selector (~) div etiketinden sonra gelen p etiketlerini alır-->
+
+
+</body>
+</html>
