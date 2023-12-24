@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sayilar=[2,4,5,7,13,18];
+        let tekSayiKontrol=(sayi)=>sayi%2==1;
+        let tekSayilar=sayilar.map(tekSayiKontrol);
+        //let tekSayilar=[]; üstteki olmadan önce sadece bunu yazmıştık
+        /*
+        for(let i of sayilar)
+        {
+            if(i%2==1)
+            {
+                tekSayilar.push(i);
+            }
+        }
+       */ //bu kısım yukarda tek sayı kontrolü yapmadan önce kullandığımız kısımdı
+        for(let ts of tekSayilar)
+        {
+            document.write(ts + "<br>");
+        }
+        
+    </script>
+</body>
+</html>
